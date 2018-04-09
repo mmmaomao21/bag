@@ -1,1 +1,22 @@
-/* You can add global styles to this file, and also import other style files */
+/* common styles */
+
+*{
+    padding: 0;
+    margin: 0
+}
+a{text-decoration: none}
+ul,li{
+    list-style: none
+}
+
+
+
+.center-content{
+    text-align: center
+}
+.float-left{float: left;}
+.float-right{float: right;}
+.clearfix{
+    display: block;
+    clear: both;
+}

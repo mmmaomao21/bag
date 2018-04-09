@@ -5,18 +5,29 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { LoginComponent } from '../pages/login/login.component';
+import { MainComponent } from '../pages/main/main.component';
 
+
+import { AuthService } from '../providers/auth-service';
+import { CookieService } from 'ngx-cookie-service';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    MainComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    AuthService,
+    CookieService
+
+
+
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
